@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Liên Hệ | Prime Kit Shop</title>
+    <title>Giỏ Hàng | Prime Kit Shop</title>
     <link rel="stylesheet" href="../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -26,22 +26,28 @@
 
     <main class="khung-chua">
         <div class="hop-trang">
-            <h2 class="canh-giua tieu-de-cam">Để Lại Lời Nhắn</h2>
-            <form onsubmit="alert('Cảm ơn bạn đã gửi lời nhắn!'); return false;">
-                <div class="nhom-nhap">
-                    <input type="text" class="o-nhap" placeholder="Họ và tên" required>
-                </div>
-                <div class="nhom-nhap">
-                    <input type="email" class="o-nhap" placeholder="Email của bạn" required>
-                </div>
-                <div class="nhom-nhap">
-                    <textarea class="o-nhap" rows="4" placeholder="Nội dung cần hỗ trợ..." required></textarea>
-                </div>
-                <button type="submit" class="nut-cam rong-100">GỬI YÊU CẦU</button>
-            </form>
+            <h2 class="tieu-de-cam canh-giua">Giỏ Hàng Của Bạn</h2>
+            <div style="overflow-x: auto;">
+                <table class="bang-gio-hang">
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="danh-sach-gio"></tbody>
+                </table>
+            </div>
+            <div style="text-align: right; margin-top: 30px;">
+                <h3 style="margin-bottom: 20px; color: #0056b3;">Tổng cộng: <span id="tong-tien">0</span> đ</h3>
+                <button class="nut-cam" onclick="alert('Cảm ơn bạn đã đặt hàng! Mã số sinh viên của tôi là: 110124109')">THANH TOÁN</button>
+            </div>
         </div>
     </main>
-    
+
 <footer class="chan-trang">
         <div class="luoi-chan-trang">
             <div>
@@ -57,13 +63,12 @@
                 </ul>
             </div>
             <div>
-                <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+                <h4>HỖ TRỢ Prime Kit Shop</h4>
                 <p>Hotline: 032 558 0024</p>
                 <p>Email: primekitshop@gmail.com</p>
             </div>
         </div>
     </footer>
-
 
     <script src="../js/script.js"></script>
 </body>

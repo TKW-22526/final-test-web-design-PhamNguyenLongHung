@@ -15,7 +15,7 @@ body { font-family:'Poppins',sans-serif;background:linear-gradient(180deg,#0F172
 .logo-container { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .logo-anh { height: 40px; width: auto; object-fit: contain; }
 .logo-text { color:#FBBF24; font-size: 40px; font-weight: bold; }
-.nut-gio-hang { font-weight: bold; color:#FBBF24; text-decoration: none; }
+.nut-gio-hang { font-weight: bold; color:#FBBF24; text-decoration: none; margin-left:auto;}
 
 /* Banner */
 .thanh-dieu-huong { background:#1F2937; padding: 10px 0; }
@@ -298,4 +298,30 @@ body.has-taskbar { padding-bottom: 40px; }
 @media (max-width: 640px) {
   .student-taskbar { font-size: 0.72rem; gap: 14px; }
   .taskbar-label { display: none; }
+}
+.logo-container{
+    flex:1;
+}
+
+.tim-kiem{
+    flex:0 0 420px;
+}
+
+.nut-gio-hang{
+    flex:1;
+    text-align:right;
+}
+.thuong-hieu{
+    margin:10px 0;
+    font-size:16px;
+    color:#555;
+}
+
+.thuong-hieu strong{
+    color:#000;
+}
+
+#thuong-hieu-chi-tiet{
+    color:#d60000;
+    font-weight:bold;
 }
